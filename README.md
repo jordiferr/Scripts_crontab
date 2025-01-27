@@ -4,7 +4,7 @@ Aquest repositori conté alguns scripts en bash que m'han servit i/o encara em s
 
 ## Scripts
 
-### 1. Backup Script
+### 1. Backup Script (copia_seguretat_rclone.sh)
 
 Aquest script realitza una còpia de seguretat d'una carpeta especificada, la comprimeix, l'encripta i la carrega a una destinació remota mitjançant `rclone`.
 
@@ -15,7 +15,7 @@ Aquest script realitza una còpia de seguretat d'una carpeta especificada, la co
 - Carregar el fitxer encriptat i signat a una destinació remota (com Dropbox) utilitzant `rclone`.
 - Enviar un correu electrònic de notificació al servidor de correu local un cop la còpia de seguretat s'ha completat.
 
-### 2. Cleanup Script
+### 2. Cleanup Script (delete_REMOTESERVICE_older.sh)
 
 Aquest script neteja fitxers antics d'una destinació remota mantenint un màxim de 4 fitxers en aquesta destinació.
 
@@ -38,6 +38,6 @@ Aquest script neteja fitxers antics d'una destinació remota mantenint un màxim
 ### Exemples
 
 ```bash
-./backup_script.sh
-./cleanup_script.sh
+./copia_seguretat_rclone.sh
+./delete_REMOTESERVICE_older.sh
 ```
